@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food-Recipes</title>
+
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <br>
+    <div>
+    <span style="font-size: 45px;margin-top: 150px; margin-left: 50px;"><span style="color:#ff9900">(R)</span><span style="color:white">ecipes</span></span>
+    <span style="margin-left: 1100px;color:white">
+      <a href="index.html">Logout</a></span>
+    </div><center>
+    <form name="search"action="" method="POST">
+      <input type="text"  id="search" name="reg" placeholder="Search...">
+    </form>
+    <h2 style="color:white" type="button" onclick="create()">Create Recipe</h2><br>
+    <h2 style="color:white" type="button" onclick="shopping()">Add to Shopping list</h2></center>
+     <br><br>
+     <center>
+     <table id="t" style="color:white">
+      <tr id="1">
+        <td class="content"><p onclick="myFunction0111()">Delete Recipe</p><a style="text-decoration:none;" href = "pizza.html"><button>Pizza</button></a></td>
+        <td class="content"><p onclick="myFunction011()">Delete Recipe</p><a style="text-decoration:none;" href = "pasta.html"><button>Pasta</button></a></td>
+        <td class="content"><p onclick="myFunction01()">Delete Recipe</p><a style="text-decoration:none;" href = "burger.html"><button>Burger</button></a></td>
+      </tr>
+      <tr id="2">
+        <td class="content"><p onclick="myFunction0222()">Delete Recipe</p><a style="text-decoration:none;" href = "noodles.html"><button>Noodles</button></a></td>
+        <td class="content"><p onclick="myFunction022()">Delete Recipe</p><a style="text-decoration:none;" href = "hs.html"><button>Chinese Hot and Sour Soup</button></a></td>
+        <td class="content"><p onclick="myFunction02()">Delete Recipe</p><a style="text-decoration:none;" href = "cgs.html"><button>Carrot Ginger Soup</button></a></td>
+      </tr>
+      <tr id="3">
+        <td class="content"><p onclick="myFunction0333()">Delete Recipe</p><a style="text-decoration:none;" href = "breadroll.html"><button>Bread Roll</button></a></td>
+        <td class="content"><p onclick="myFunction033()">Delete Recipe</p><a style="text-decoration:none;" href = "ps.html"><button>Paneer Sandwich</button></a></td>
+        <td class="content"><p onclick="myFunction03()">Delete Recipe</p><a style="text-decoration:none;" href = "vegetablemaggie.html"><button>Vegetable Maggie</button></a></td>
+      </tr>
+      <tr id="4">
+        <td class="content"><p onclick="myFunction0444()">Delete Recipe</p><a style="text-decoration:none;" href = "frenchtoast.html"><button>French Toast</button></a></td>
+        <td class="content"><p onclick="myFunction044()">Delete Recipe</p><a style="text-decoration:none;" href = "tacos.html"><button>Tacos</button></a></td>
+        <td class="content"><p onclick="myFunction04()">Delete Recipe</p><a style="text-decoration:none;" href = "momos.html"><button>Momos</button></a></td>
+      </tr>
+      <tr id="5">
+        <td class="content"><p onclick="myFunction0555()">Delete Recipe</p><a style="text-decoration:none;" href = "pt.html"><button>Paneer Tikka</button></a></td>
+        <td class="content"><p onclick="myFunction055()">Delete Recipe</p><a style="text-decoration:none;" href = "ccb.html"><button>Crispy Chilly Babycorn</button></a></td>
+        <td class="content"><p onclick="myFunction05()">Delete Recipe</p><a style="text-decoration:none;" href = "ac.html"><button>American Chopsuey</button></a></td>
+      </tr>
+      <tr id="6">
+        <td class="content"><p onclick="myFunction0666()">Delete Recipe</p><a style="text-decoration:none;" href = "q.html"><button>Quesadilla</button></a></td>
+        <td class="content"><p onclick="myFunction066()">Delete Recipe</p><a style="text-decoration:none;" href = "chococake.html"><button>Chocolate Cake</button></a></td>
+        <td class="content"><p onclick="myFunction06()">Delete Recipe</p><a style="text-decoration:none;" href = "lbp.html"><button>Lemon Bar Peeps</button></a></td>
+      </tr>
+      <tr id="7">
+        <td class="content"><p onclick="myFunction0777()">Delete Recipe</p><a style="text-decoration:none;" href = "sbpie.html"><button>Strawberry Pie</button></a></td>
+        <td class="content"><p onclick="myFunction077()">Delete Recipe</p><a style="text-decoration:none;" href = "tiramisu.html"><button>Tiramisu</button></a></td>
+        <td class="content"><p onclick="myFunction07()">Delete Recipe</p><a style="text-decoration:none;" href = "pc.html"><button>Panna Cotta</button></a></td>
+      </tr>
+      <tr id="8">
+        <td class="content"><p onclick="myFunction0888()">Delete Recipe</p><a style="text-decoration:none;" href = "bmc.html"><button>Blueberry Muffin Cake</button></a></td>
+        <td class="content"><p onclick="myFunction088()">Delete Recipe</p><a style="text-decoration:none;" href = "cheesecake.html"><button>Cheesecake</button></a></td>
+        <td class="content"><p onclick="myFunction08()">Delete Recipe</p><a style="text-decoration:none;" href = "cm.html"><button>Chocolate Milkshake</button></a></td>
+      </tr>
+    </table>
+<center>
+     <br><br>
+<table id="z" style="color:white">
+<p style="color:white">SHOPPING LIST :</p>
+</table></center>
+
+<script>
+function myFunction01() {
+  var row = document.getElementById("1");
+  row.deleteCell(-1);
+}
+
+function myFunction011() {
+  var row = document.getElementById("1");
+  row.deleteCell(1);
+}
+function myFunction0111() {
+  var row = document.getElementById("1");
+  row.deleteCell(0);
+}
+
+function myFunction02() {
+  var row = document.getElementById("2");
+  row.deleteCell(-1);
+}
+
+function myFunction022() {
+  var row = document.getElementById("2");
+  row.deleteCell(1);
+}
+function myFunction0222() {
+  var row = document.getElementById("2");
+  row.deleteCell(0);
+}
+
+function myFunction03() {
+  var row = document.getElementById("3");
+  row.deleteCell(-1);
+}
+
+function myFunction033() {
+  var row = document.getElementById("3");
+  row.deleteCell(1);
+}
+function myFunction0333() {
+  var row = document.getElementById("3");
+  row.deleteCell(0);
+}
+
+function myFunction04() {
+  var row = document.getElementById("4");
+  row.deleteCell(-1);
+}
+
+function myFunction044() {
+  var row = document.getElementById("4");
+  row.deleteCell(1);
+}
+function myFunction0444() {
+  var row = document.getElementById("4");
+  row.deleteCell(0);
+}
+
+function myFunction05() {
+  var row = document.getElementById("5");
+  row.deleteCell(-1);
+}
+
+function myFunction055() {
+  var row = document.getElementById("5");
+  row.deleteCell(1);
+}
+function myFunction0555() {
+  var row = document.getElementById("5");
+  row.deleteCell(0);
+}
+
+function myFunction06() {
+  var row = document.getElementById("6");
+  row.deleteCell(-1);
+}
+
+function myFunction066() {
+  var row = document.getElementById("6");
+  row.deleteCell(1);
+}
+function myFunction0666() {
+  var row = document.getElementById("6");
+  row.deleteCell(0);
+}
+
+function myFunction07() {
+  var row = document.getElementById("7");
+  row.deleteCell(-1);
+}
+
+function myFunction077() {
+  var row = document.getElementById("7");
+  row.deleteCell(1);
+}
+function myFunction0777() {
+  var row = document.getElementById("7");
+  row.deleteCell(0);
+}
+
+function myFunction08() {
+  var row = document.getElementById("8");
+  row.deleteCell(-1);
+}
+
+function myFunction088() {
+  var row = document.getElementById("8");
+  row.deleteCell(1);
+}
+function myFunction0888() {
+  var row = document.getElementById("8");
+  row.deleteCell(0);
+}
+
+function create() {
+  var para = document.createElement("BUTTON");     
+
+           var name = prompt("Enter The Name Of The Recipe: "); 
+para.innerHTML = name;               
+document.getElementById("t").appendChild(para);
+  }
+
+
+function shopping() {
+  var para = document.createElement("BUTTON");     
+
+           var name = window. prompt("Add To The Shopping List: "); 
+para.innerHTML = name;               
+document.getElementById("z").appendChild(para);
+  
+
+ att = document.createAttribute("id");
+  att.value = "9";
+para.setAttributeNode(att);
+
+ 
+}
+
+
+</script>
+
+
+  </center>
+  </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+ $('#search').keyup(function(){
+  var text = $(this).val();
+  $('.content').hide();
+  $('.content:contains("'+text+'")').show();
+ 
+ });
+});
+
+</script>
+</html>
+              
